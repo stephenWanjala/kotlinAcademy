@@ -16,6 +16,8 @@ default arguments are used.
   */
 
     fun divide(a: Int, b: Int = 1) = a / b
+    // handle a zero denominator
+    fun divide(a: Int, b: Int) = if (b == 0) 0 else a / b
 
     fun main() {
         println(divide(10, 2))
