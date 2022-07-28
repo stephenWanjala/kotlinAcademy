@@ -17,9 +17,10 @@ default arguments are used.
 
     fun divide(a: Int, b: Int = 1) = a / b
 
-    fun main(args: Array<String>) {
+    fun main() {
         println(divide(10, 2))
         println(divide(10))
     }
 
+    
 
