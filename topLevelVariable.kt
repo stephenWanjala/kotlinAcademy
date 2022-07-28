@@ -5,6 +5,7 @@ var x = 0
 fun addOneToX(){
     x+=1
 }
+/*not famillia with functions? checkout to the `functions`  branch*/
 fun main(args: Array<String>) {
     println("x = $x; PI = $PI")
 addOneToX()
