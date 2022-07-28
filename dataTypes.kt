@@ -5,4 +5,5 @@ val b = 2
 val c: Int // Type required when no initializer is provided
 c = 3
 // deferred assignment
+println("a = $a, b = $b, c = $c")
 }
