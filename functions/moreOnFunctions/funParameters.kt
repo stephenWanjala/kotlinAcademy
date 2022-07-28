@@ -1,3 +1,5 @@
+// import kotlin.math.pow
+import kotlin.math.*
 /*
     Parameters
 Function parameters are defined using Pascal notation - name: type.
@@ -13,7 +15,13 @@ Function parameters are defined using Pascal notation - name: type.
     return result
 }
 
-//or  fun getPowerOf(base: Int, exponent: Int) = base.pow(exponent)
+//or  fun getPowerOf(base: Int, exponent: Double) = base.pow(exponent)
+
+//You can use a trailing comma when you declare function parameters:
+fun getPowerOf(base: Double, exponent: Double,) = base.pow(exponent)
+
+
 fun main(args: Array<String>) {
+    println(getPowerOf(2.0, 3.0))
     println(getPowerOf(2, 3))
 }
