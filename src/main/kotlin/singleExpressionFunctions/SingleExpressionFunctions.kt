@@ -15,3 +15,6 @@ Explicitly declaring the return type is optional
  fun doubleTheNumber(num:Int)=num*2
  */
 
+fun main() {
+    println(doubleTheNumber(20))
+}
