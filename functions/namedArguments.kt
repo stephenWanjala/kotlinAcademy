@@ -40,7 +40,8 @@ fun getSumOfTheNumbers(vararg nums:Int):Int{
 }
 
 }
-
+/*On the JVM: You can't use the named argument syntax when calling Java functions because Java bytecode does
+not always preserve the names of function parameters. */
 fun main(args: Array<String>) {
     println(getSumOfTheNumbers(nums = *arrayOf(1,2,3,4)))
 }
