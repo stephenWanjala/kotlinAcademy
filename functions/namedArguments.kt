@@ -11,12 +11,36 @@ When you use named arguments in a function call, you can freely change the order
 
  
 
- fun formatName(firstName: String, lastName: String, title: String = "Mr.", delimiter: String = " ") = "$title$delimiter$firstName$delimiter$lastName"
+ fun formatName(firstName: String, lastName: String, title: String = "Mr.", delimiter: String = " ",) = "$title$delimiter$firstName$delimiter$lastName"
 
 fun main(args: Array<String>) {
+    // The order of the arguments doesn't matter
+    //When calling this function, you don’t have to name all its arguments:
     println(formatName("Jane", "Smith", "Ms.", "."))
+    //You can skip all the ones with default values:
+
     println(formatName("Jane", "Smith"))
     println(formatName("Jane", "Smith", "Ms."))
     println(formatName("Jane", "Smith", delimiter = "."))
     println(formatName("Jane", "Smith", title = "Ms."))
+
+    /*  You are also able to skip specific arguments with default values, 
+    rather than omitting them all. However, after the first skipped
+    argument, you must name all subsequent arguments:*/
+
+
+// You can pass a variable number of arguments ( vararg) with names using the spread operator:
+
+fun getSumOfTheNumbers(vararg nums:Int):Int{
+    var sum=0
+    nums.forEach{
+        sum+it
+    }
+    return sum
+}
+
+}
+
+fun main(args: Array<String>) {
+    println(getSumOfTheNumbers(nums = *arrayOf(1,2,3,4)))
 }
