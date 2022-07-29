@@ -14,7 +14,13 @@ Constructors
 A class in Kotlin can have a primary constructor and one or more secondary constructors. The primary constructor is a part of
 the class header, and it goes after the class name and optional type parameters.
  */
-class  Person constructor(var firstName:String){
+//class  Person constructor(var firstName:String){
+//
+//}
+/*
+If the primary constructor does not have any annotations or visibility modifiers,
+the constructor keyword can be omitted
+ */
+class Person(var firstName:String){
 
 }
-
