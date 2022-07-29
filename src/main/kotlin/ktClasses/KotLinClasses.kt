@@ -9,5 +9,12 @@ class has no body, the curly braces can be omitted.
 e.g
 class Person
  */
+/*
+Constructors
+A class in Kotlin can have a primary constructor and one or more secondary constructors. The primary constructor is a part of
+the class header, and it goes after the class name and optional type parameters.
+ */
+class  Person constructor(var firstName:String){
 
+}
 
